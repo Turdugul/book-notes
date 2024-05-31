@@ -1,0 +1,238 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #0b5dc1;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info-text {
+  height: 240px;
+}
+input[type="text"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.btn-box {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.btn-box a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+button {
+  width: 100%;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: green;
+}
+
+button[type="submit"]:hover {
+  background-color: #50dd13;
+}
+.delete-btn {
+  background-color: #fa0a3e !important;
+}
+.edit-btn {
+  background-color: #4caf50;
+  width: 90px;
+}
+.edit-btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.edit-btn:hover {
+  background-color: #45a049;
+}
+
+.form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 500px;
+}
+
+form {
+  margin: 20px;
+  text-align: center;
+}
+
+form input,
+form textarea {
+  display: block;
+  margin: 10px auto;
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.book {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  width: 380px;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.book h2 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+a {
+  display: block;
+  margin: 5px 0;
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  height: 20%;
+  margin-top: 10px;
+  text-align: center;
+  background-color: #0b5dc1;
+  color: white;
+  padding: 10px 0;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.book-detail {
+  display: flex;
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 800px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-image img {
+  max-width: 250px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-info {
+  margin-left: 20px;
+  flex: 1;
+}
+
+.book-info h2 {
+  font-size: 1.8em;
+  margin: 0 0 10px;
+}
+
+.book-info .author {
+  font-weight: bold;
+}
+
+.book-info .rating {
+  margin: 10px 0;
+}
+
+.book-info .date-read {
+  font-style: italic;
+  color: #555;
+}
+
+.review h3 {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+footer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

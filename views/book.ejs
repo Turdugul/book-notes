@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= book.title %> - Full Review</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header>
+        <h1><a href="/">Book Reviews</a></h1>
+    </header>
+    <main class="book-detail">
+        <div class="book-image">
+            <img src="<%= book.cover_url %>" alt="<%= book.title %>">
+        </div>
+        <div class="book-info">
+            <h2><%= book.title %></h2>
+            <p>by <span class="author"><%= book.author %></span></p>
+            <div class="rating">
+                <span>Rating: <%= book.rating %> / 5</span>
+            </div>
+            <p class="date-read">Read on: <%= book.date_read %></p>
+            <div class="review">
+                <h3>Review:</h3>
+                <p><%= book.review %></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="/">Back to all books</a>
+    </footer>
+</body>
+</html>
