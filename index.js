@@ -4,15 +4,17 @@ import pg from 'pg';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import routes from './routes.js';
+import env from "dotenv";
 
 const app = express();
 const port = 3000;
+env.config();
 const db = new pg.Client({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'booknotes',
-  password: 'datka19sql',
-  port: 5432,
+  user: process.env.PG_USER,
+  host: process.env.PG_HOST,
+  database: process.env.PG_DATABASE,
+  password: process.env.PG_PASSWORD,
+  port: process.env.PG_PORT,
 });
 db.connect();
 

@@ -1,11 +1,13 @@
 {
   "name": "book-notes-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "A web app for managing book notes",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "deploy": "gh-pages -d public"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +16,11 @@
     "axios": "^1.7.2",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "pg": "^8.11.5"
-  }
+    "pg": "^8.11.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  },
+  "homepage": "http://Turdugul.github.io/my-book-notes-app"
 }
